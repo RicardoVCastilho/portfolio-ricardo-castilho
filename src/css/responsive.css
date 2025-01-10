@@ -1,0 +1,145 @@
+@media (max-width: 1024px) {
+    .main-habilities h1 {
+        font-size: 28px;
+    }
+
+    .habilities-container {
+        grid-template-columns: repeat(2, 1fr); /* Em telas médias, exibe 2 colunas */
+    }
+
+    .projects-section .section-title h1 {
+        font-size: 28px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr); /* Exibe 2 colunas em telas médias */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Menu para telas menores */
+    .menu {
+        display: none;
+    }
+
+    /* Exibir ícone do hamburguer */
+    .hamburguer-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburguer-menu ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background-color: #333;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    .hamburguer-menu ul li {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .hamburguer-menu ul li a {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .hamburguer-menu ul li a:hover {
+        color: #f0a500;
+    }
+
+    .presentation {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .presentation h1 {
+        font-size: 28px;
+    }
+
+    .presentation p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .profile-picture img {
+        max-width: 200px; /* Ajusta o tamanho da imagem para telas menores */
+    }
+
+    .social-links {
+        font-size: 20px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        text-align: center; /* Centraliza o texto em telas menores */
+    }
+
+    .about-me h1 {
+        font-size: 28px;
+    }
+
+    .dev-picture {
+        max-width: 200px; /* Ajusta o tamanho da imagem para telas menores */
+        margin-right: 0; /* Remove a margem à direita */
+        margin-bottom: 20px; /* Espaçamento inferior para separar da informação */
+    }
+
+    .informations p {
+        font-size: 16px;
+        max-width: 100%;
+    }
+
+    .main-habilities h1 {
+        font-size: 28px;
+    }
+
+    .habilities-container {
+        grid-template-columns: 1fr; /* Em telas pequenas, exibe 1 coluna */
+    }
+
+    .habilities-container .habilities-informations {
+        padding: 15px;
+    }
+
+    .habilities-container h3 {
+        font-size: 20px;
+    }
+
+    .habilities-container p {
+        font-size: 14px;
+    }
+
+    .projects-section .section-title h1 {
+        font-size: 28px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr; /* Exibe 1 coluna em telas pequenas */
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .project h3 {
+        font-size: 20px;
+    }
+
+    .project-informations p {
+        font-size: 14px;
+    }
+
+}
+
+/* Para quando o menu for ativado (exemplo de class que pode ser aplicada via JS) */
+.hamburguer-menu.active ul {
+    display: flex;
+}

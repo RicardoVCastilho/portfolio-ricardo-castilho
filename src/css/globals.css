@@ -1,0 +1,325 @@
+/* Container do header */
+header {
+    background-color: #333; /* Cor de fundo escura */
+    padding: 20px 0;
+    color: white;
+}
+
+/* Container interno para centralizar o conteúdo */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Menu de navegação */
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+/* Menu principal */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Itens do menu */
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.menu li a:hover {
+    color: #f0a500; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilos do hamburguer menu para telas pequenas */
+.hamburguer-menu {
+    display: none;
+}
+
+/* Estilos gerais da seção */
+.presentation {
+    display: flex;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* Cor de fundo leve */
+    gap: 30px; /* Espaço entre os elementos */
+}
+
+/* Alinhamento e estilos do conteúdo textual */
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinha o conteúdo à esquerda */
+    max-width: 600px; /* Limita a largura máxima */
+}
+
+.text-content h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.text-content p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px; /* Espaço entre o texto e as redes sociais */
+}
+
+/* Redes sociais */
+.social-medias {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+.social-links {
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s;
+    text-decoration: none; /* Remove sublinhado */
+}
+
+.social-links:hover {
+    color: #f0a500; /* Cor de destaque ao passar o mouse */
+}
+
+/* Estilos para a imagem do perfil */
+.profile-picture img {
+    max-width: 300px; /* Limita o tamanho da imagem */
+    border-radius: 50%; /* Torna a imagem redonda */
+    border: 5px solid #fff; /* Borda branca */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos gerais da seção About Me */
+.about-me {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #fff; /* Fundo branco para se destacar das outras seções */
+    color: #333;
+}
+
+/* Estilos para o título da seção */
+.about-me h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Estilos para a imagem do desenvolvedor */
+.dev-picture {
+    flex: 1; /* A imagem vai ocupar um espaço proporcional */
+    max-width: 250px; /* Tamanho fixo da imagem */
+    margin-right: 20px; /* Espaço à direita da imagem */
+}
+
+.dev-picture img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%; /* Imagem redonda */
+    border: 5px solid #fff; /* Borda branca */
+}
+
+/* Estilos para o conteúdo informativo */
+.informations {
+    flex: 2; /* O texto ocupa um espaço maior */
+    max-width: 650px;
+}
+
+.informations p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Estilos gerais da seção Main Habilities */
+.main-habilities {
+    padding: 50px 20px;
+    background-color: #f8f8f8; /* Fundo claro */
+    color: #333;
+}
+
+/* Título da seção */
+.main-habilities h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Container das habilidades */
+.habilities-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Exibe 4 colunas */
+    gap: 20px;
+    justify-items: center; /* Garante que os itens fiquem centralizados */
+}
+
+/* Estilo de cada habilidade */
+.habilities-container .habilities-informations {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre uma habilidade */
+.habilities-container .habilities-informations:hover {
+    transform: translateY(-10px); /* Levanta o card ao passar o mouse */
+}
+
+/* Logo da habilidade */
+.habilities-container .logo {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #4CAF50; /* Cor para ícones */
+}
+
+.habilities-container h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.habilities-container p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Estilos gerais da seção Projects */
+.projects-section {
+    padding: 50px 20px;
+    background-color: #f8f8f8; /* Fundo claro */
+    color: #333;
+}
+
+/* Título da seção */
+.projects-section .section-title h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+/* Container dos projetos */
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Exibe 3 colunas */
+    gap: 30px;
+    justify-items: center; /* Garante que os itens fiquem centralizados */
+}
+
+/* Estilo de cada projeto */
+.project {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito ao passar o mouse sobre um projeto */
+.project:hover {
+    transform: translateY(-10px); /* Levanta o card ao passar o mouse */
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-bottom: 1px solid #eee;
+}
+
+.project h3 {
+    font-size: 22px;
+    margin: 20px 0;
+    color: #333;
+}
+
+.project-informations p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    padding: 0 20px 20px;
+}
+
+/* Links dentro de um projeto */
+.project a {
+    display: inline-block;
+    font-size: 14px;
+    color: #007BFF;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2c2c2c; /* Fundo escuro */
+    color: #ffffff; /* Texto branco */
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+.footer-content p {
+    margin: 5px 0; /* Espaço entre as linhas */
+    color: #dcdcdc; /* Texto com contraste suave */
+}
+
+.footer-content .social-links {
+    margin-top: 10px; /* Espaço acima dos ícones */
+}
+
+.footer-content .social-icon {
+    color: #ffffff; /* Cor dos ícones */
+    margin: 0 10px; /* Espaçamento entre ícones */
+    font-size: 20px; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s ease; /* Transição suave para hover */
+}
+
+.footer-content .social-icon:hover {
+    color: #4caf50; /* Cor ao passar o mouse (exemplo: verde) */
+}
+
+.footer-content .social-icon i {
+    pointer-events: none; /* Garante que apenas o link seja clicável */
+}
