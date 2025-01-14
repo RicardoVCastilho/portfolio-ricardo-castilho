@@ -21,70 +21,73 @@
 
             <nav class="nav-bar">
                 <!--Menu para telas maiores-->
-                <ul class="menu">
+                <ul class="menu desktop-menu">
                     <li><a href="#presentation">Apresentação</a></li>
                     <li><a href="#about-me">Sobre mim</a></li>
                     <li><a href="#main-habilities">Habilidades</a></li>
-                    <li><a href="#projects">Meus projetos</a></li>
+                    <li><a href="#projects">Projetos</a></li>
                 </ul>
-
+            
+                <!-- Ícone do menu hamburguer -->
                 <div class="hamburguer-menu">
-                    <img class="icon" src="./src/images/menu_white_36dp.svg" alt="ícone do menu">
+                    <img class="icon" src="./src/images/menu_white_36dp.svg" alt="ícone do menu" onclick="toggleMenu()">
                 </div>
-
+            
                 <!--Menu para telas menores-->
-                <div class="hamburguer-menu">
+                <div class="hamburguer-menu-content" id="hamburgerMenu">
                     <ul>
                         <li><a href="#presentation">Apresentação</a></li>
                         <li><a href="#about-me">Sobre mim</a></li>
                         <li><a href="#main-habilities">Habilidades</a></li>
-                        <li><a href="#projects">Meus projetos</a></li>
+                        <li><a href="#projects">Projetos</a></li>
                     </ul>
                 </div>
             </nav>
+            
         </div>
     </header>
 
     <section class="presentation" id="presentation">
-        <h1>Olá! Me chamo Ricardo Vitor Castilho.</h1>
 
-        <p>Seja bem vindo ao meu portfólio.
-            <br>
-            Neste espaço, você encontrará um destaque das minhas principais experiências e aprendizados no universo do
-            desenvolvimento web. Compartilho não apenas os projetos realizados durante o meu processo de aprendizagem,
-            mas também aqueles que envolvem clientes finais, nos quais apliquei minhas habilidades para criar soluções
-            reais e eficazes. Cada projeto reflete o meu compromisso com o aprimoramento contínuo, buscando sempre
-            integrar teoria e prática para entregar resultados que atendam às necessidades dos usuários e às
-            expectativas dos clientes.
-        </p>
+        <div class="text-content">
+            <h1>Olá! Me chamo Ricardo Vitor Castilho.</h1>
 
-        <div class="social-medias">
-            <a href="https://www.linkedin.com/in/ricardo-vitor-castilho/" target="_blank" class="social-links"><i
-                    class="fab fa-linkedin-in"></i></a>
+            <p><strong>Seja bem vindo ao meu portfólio.</strong>
+                <br>
+                Neste espaço, você encontrará um destaque das minhas principais experiências e aprendizados no universo do
+                desenvolvimento web. Compartilho não apenas os projetos realizados durante o meu processo de aprendizagem,
+                mas também aqueles que envolvem clientes finais, nos quais apliquei minhas habilidades para criar soluções
+                reais e eficazes. Cada projeto reflete o meu compromisso com o aprimoramento contínuo, buscando sempre
+                integrar teoria e prática para entregar resultados que atendam às necessidades dos usuários e às
+                expectativas dos clientes.
+            </p>
 
-            <a href="https://wa.me/5581985775827" target="_blank" class="social-links"><i
-                    class="fab fa-whatsapp"></i></a>
+            <div class="social-medias">
+                <a href="https://www.linkedin.com/in/ricardo-vitor-castilho/" target="_blank" class="social-links"><i
+                        class="fab fa-linkedin-in"></i></a>
+    
+                <a href="https://wa.me/5581985775827" target="_blank" class="social-links"><i
+                        class="fab fa-whatsapp"></i></a>
+    
+                <a href="https://github.com/RicardoVCastilho" target="_blank" class="social-links"><i
+                        class="fab fa-github"></i></a>
+    
+                <a href="https://www.instagram.com/rv_castilho/" target="_blank" class="social-links"><i
+                        class="fab fa-instagram"></i></a>
+                </div>
 
-            <a href="https://github.com/RicardoVCastilho" target="_blank" class="social-links"><i
-                    class="fab fa-github"></i></a>
-
-            <a href="https://www.instagram.com/rv_castilho/" target="_blank" class="social-links"><i
-                    class="fab fa-instagram"></i></a>
-        </div>
-
-        <div class="profile-picture">
-            <img src="./src/images/master-blaster-profile-picture.jpg" alt="Foto de perfil Ricardo Castilho">
-        </div>
+                <a href="./src/images/cv-ricardo-web-dev.pdf" target="_blank" class="btn-download">Veja meu CV</a>
+            </div>
+    
+            <div class="profile-picture">
+                <img src="./src/images/master-blaster-profile-picture.jpg" alt="Foto de perfil Ricardo Castilho">
+            </div>
     </section>
 
     <section class="about-me" id="about-me">
-        <h1>Sobre Mim</h1>
-
-        <div class="dev-picture">
-            <img src="./src/images/master-blaster-profile-picture.jpg" alt="imagem do dev Ricardo Castilho">
-        </div>
-
         <div class="informations">
+            <h1>Sobre Mim</h1>
+
             <p>
                 <strong>Meu nome é Ricardo Vitor Castilho e sou desenvolvedor web júnior!</strong>
                 <br>
@@ -101,13 +104,17 @@
                 filmes, séries e animes, além de explorar outras "nerdices" que me fazem bem.
             </p>
         </div>
+
+        <div class="dev-picture">
+            <img src="./src/images/master-blaster-profile-picture.jpg" alt="imagem do dev Ricardo Castilho">
+        </div>
     </section>
 
     <section class="main-habilities" id="main-habilities">
         <h1>Principais Habilidades</h1>
 
         <div class="habilities-container">
-            <div class="javascript-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fab fa-js" id="javascript"></i>
@@ -121,7 +128,7 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="typescript-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fab fa-js" id="javascript"></i>
@@ -135,7 +142,7 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="html-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fab fa-html5" id="html5"></i>
@@ -149,7 +156,7 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="css-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fab fa-css3-alt" id="css3"></i>
@@ -163,7 +170,21 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="node-informations">
+            <div class="habilities-informations">
+
+                <div class="logo">
+                    <i class="fa-brands fa-bootstrap" id="bootstrap"></i>
+                </div>
+
+                <h3>Bootstrap</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
+                    ex
+                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
+                    atque
+                    dignissimos possimus!</p>
+            </div>
+
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fab fa-node-js" id="nodejs"></i>
@@ -177,7 +198,7 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="express-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fab fa-node-js" id="express"></i>
@@ -191,7 +212,7 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="mongodb-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fab fa-envira" id="mongodb"></i>
@@ -205,7 +226,7 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="mysql-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fa-solid fa-database" id="mysql"></i>
@@ -219,7 +240,7 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="postgresql-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fa-solid fa-database" id="postgre"></i>
@@ -233,7 +254,7 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="github-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fab fa-github" id="github"></i>
@@ -247,7 +268,7 @@
                     dignissimos possimus!</p>
             </div>
 
-            <div class="git-informations">
+            <div class="habilities-informations">
 
                 <div class="logo">
                     <i class="fa-brands fa-git-alt" id="git"></i>
@@ -266,14 +287,9 @@
 
     <section class="projects-section" id="projects">
 
+        <h1>Meus projetos</h1>
+        
         <div class="container">
-
-            <div class="row">
-                <div class="section-title">
-                    <h1>Meus projetos</h1>
-                </div>
-            </div>
-
             <div class="projects-container">
 
                 <div class="project">
@@ -305,14 +321,11 @@
                     </a>
                     <a href="https://documenter.getpostman.com/view/39919123/2sAYBd7Tg5" target="_blank">Confira a
                         documentação completa do projeto</a>
-                    <a href="https://www.youtube.com/watch?v=LXNWB7Hl8RM" target="_blank">Confira também um vídeo de
-                        demonstração
-                    </a>
                 </div>
 
                 <div class="project">
                     <a href="https://github.com/RicardoVCastilho/api-sql" target="_blank">
-                        <img src="https://via.placeholder.com/389X700" alt="Projeto API clientes" />
+                        <img src="src/images/userlist-project.jpeg" alt="Projeto API clientes" />
                         <h3>API - Gerenciamento de clientes com MySQL2</h3>
                         <div class="project-informations">
                             <p>API RESTful para gerenciamento de dados de clientes, utilizando Node.js, Express e MySQL.
@@ -328,7 +341,7 @@
 
                 <div class="project">
                     <a href="https://github.com/RicardoVCastilho/api-mongo-db" target="_blank">
-                        <img src="https://via.placeholder.com/389X700" alt="Projeto API gestão de garantias" />
+                        <img src="src/images/userlist-project.jpeg" alt="Projeto API gestão de garantias" />
                         <h3>API - Gestão de garantias associadas a clientes</h3>
                         <div class="project-informations">
                             <p> Uma API desenvolvida para gerenciar garantias associadas a clientes. A aplicação permite
@@ -401,22 +414,6 @@
                     </a>
                 </div>
 
-                <div class="project">
-                    <a href="https://github.com/RicardoVCastilho/clinical-presentation-flyer" target="_blank">
-                        <img src="./src/images/presentation-flyer.jpeg" alt="Cartão de apresentação" />
-                        <h3>Cartão de apresentação - PI</h3>
-                        <div class="project-informations">
-                            <p>Este projeto tem como objetivo a criação de um panfleto digital interativo, utilizado
-                                para apresentar informações sobre a Mascot's Clinical Vet, incluindo links úteis, como
-                                demonstração do projeto, documentação e a apresentação do trabalho. O panfleto conta com
-                                design responsivo, modo claro e escuro (dark mode) e é desenvolvido com HTML, CSS e
-                                JavaScript.</p>
-                        </div>
-                    </a>
-                    <a href="https://ricardovcastilho.github.io/clinical-presentation-flyer/" target="_blank">Confira o
-                        projeto no GitHub Pages.
-                    </a>
-                </div>
             </div>
     </section>
 
