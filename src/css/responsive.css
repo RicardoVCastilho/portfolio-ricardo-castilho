@@ -1,0 +1,300 @@
+@media (max-width: 768px) {
+    header {
+        position: absolute;
+    }
+
+    header .container {
+        flex-direction: column;
+    }
+
+    header .logo {
+        font-size: 20px;
+        padding: 10px 5px;
+    }
+
+    header .menu {
+        flex-direction: column;
+        gap: 10px; 
+    }
+
+    header .menu li a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    .presentation {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 40px 15px;
+        padding-top: 260px;
+    }
+
+    .text-content {
+        text-align: center;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .text-content h1 {
+        font-size: 28px;
+    }
+
+    .text-content p {
+        font-size: 16px;
+    }
+
+    .social-medias {
+        justify-content: center;
+    }
+
+    .profile-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .btn-download {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+
+    .about-me {
+        flex-direction: column;
+        gap: 30px;
+        padding: 40px 15px;
+    }
+
+    .dev-picture {
+        width: 200px;
+        height: 200px;
+    }
+
+    .informations {
+        align-items: center;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .informations h1 {
+        font-size: 28px;
+    }
+
+    .informations p {
+        font-size: 16px;
+    }
+
+    .main-habilities {
+        padding: 40px 15px;
+    }
+
+    .main-habilities h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .habilities-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .habilities-container .habilities-informations {
+        padding: 15px 10px;
+    }
+
+    .habilities-container .logo {
+        font-size: 35px;
+    }
+
+    .habilities-container h3 {
+        font-size: 20px;
+    }
+
+    .habilities-container p {
+        font-size: 14px;
+    }
+
+    .projects-section {
+        padding: 40px 15px;
+    }
+
+    .projects-section h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .projects-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .project {
+        border-radius: 8px;
+    }
+
+    .project h3 {
+        font-size: 20px;
+    }
+
+    .project-informations p {
+        font-size: 14px;
+        padding: 0 10px 15px;
+    }
+
+    .stacks-icons i {
+        font-size: 20px;
+    }
+
+    .scroll-to-top-btn {
+        padding: 15px;
+        font-size: 20px;
+    }
+
+    .footer {
+        padding: 15px 10px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .footer-content .social-links {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .footer-content .social-icon {
+        font-size: 18px;
+        margin: 0 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header .logo {
+        font-size: 18px;
+        padding: 8px 5px;
+    }
+
+    .presentation {
+        padding: 30px 10px;
+        padding-top: 260px;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+    }
+
+    .text-content p {
+        font-size: 14px;
+    }
+
+    .social-medias {
+        gap: 10px;
+    }
+
+    .profile-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .btn-download {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .about-me {
+        padding: 30px 10px;
+    }
+
+    .dev-picture {
+        width: 150px;
+        height: 150px;
+    }
+
+    .informations h1 {
+        font-size: 24px;
+    }
+
+    .informations p {
+        font-size: 14px;
+    }
+
+    .main-habilities {
+        padding: 30px 10px;
+    }
+
+    .main-habilities h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .habilities-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .habilities-container .habilities-informations {
+        padding: 10px 5px;
+    }
+
+    .habilities-container .logo {
+        font-size: 30px;
+    }
+
+    .habilities-container h3 {
+        font-size: 18px;
+    }
+
+    .habilities-container p {
+        font-size: 12px;
+    }
+
+    .projects-section {
+        padding: 30px 10px;
+    }
+
+    .projects-section h1 {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .project {
+        border-radius: 6px;
+    }
+
+    .project h3 {
+        font-size: 18px;
+    }
+
+    .project-informations p {
+        font-size: 12px;
+        padding: 0 5px 10px;
+    }
+
+    .stacks-icons i {
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 20px 10px;
+    }
+
+    .footer-content p {
+        font-size: 12px;
+    }
+
+    .footer-content .social-links {
+        margin-top: 15px;
+    }
+
+    .footer-content .social-icon {
+        font-size: 16px;
+        margin: 0 6px;
+    }
+}

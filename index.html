@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/globals.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="./src/images/favicon-16x16.png">
@@ -18,7 +19,7 @@
             <a href="#">
                 <h1 class="logo">RVC</h1>
             </a>
-
+    
             <nav class="nav-bar">
                 <!--Menu para telas maiores-->
                 <ul class="menu desktop-menu">
@@ -26,26 +27,10 @@
                     <li><a href="#about-me">Sobre mim</a></li>
                     <li><a href="#main-habilities">Habilidades</a></li>
                     <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#author">Autor</a></li>
                 </ul>
-            
-                <!-- Ícone do menu hamburguer -->
-                <div class="hamburguer-menu">
-                    <img class="icon" src="./src/images/menu_white_36dp.svg" alt="ícone do menu" onclick="toggleMenu()">
-                </div>
-            
-                <!--Menu para telas menores-->
-                <div class="hamburguer-menu-content" id="hamburgerMenu">
-                    <ul>
-                        <li><a href="#presentation">Apresentação</a></li>
-                        <li><a href="#about-me">Sobre mim</a></li>
-                        <li><a href="#main-habilities">Habilidades</a></li>
-                        <li><a href="#projects">Projetos</a></li>
-                    </ul>
-                </div>
-            </nav>
-            
-        </div>
     </header>
+    
 
     <section class="presentation" id="presentation">
 
@@ -54,9 +39,12 @@
 
             <p><strong>Seja bem vindo ao meu portfólio.</strong>
                 <br>
-                Neste espaço, você encontrará um destaque das minhas principais experiências e aprendizados no universo do
-                desenvolvimento web. Compartilho não apenas os projetos realizados durante o meu processo de aprendizagem,
-                mas também aqueles que envolvem clientes finais, nos quais apliquei minhas habilidades para criar soluções
+                Neste espaço, você encontrará um destaque das minhas principais experiências e aprendizados no universo
+                do
+                desenvolvimento web. Compartilho não apenas os projetos realizados durante o meu processo de
+                aprendizagem,
+                mas também aqueles que envolvem clientes finais, nos quais apliquei minhas habilidades para criar
+                soluções
                 reais e eficazes. Cada projeto reflete o meu compromisso com o aprimoramento contínuo, buscando sempre
                 integrar teoria e prática para entregar resultados que atendam às necessidades dos usuários e às
                 expectativas dos clientes.
@@ -65,23 +53,23 @@
             <div class="social-medias">
                 <a href="https://www.linkedin.com/in/ricardo-vitor-castilho/" target="_blank" class="social-links"><i
                         class="fab fa-linkedin-in"></i></a>
-    
+
                 <a href="https://wa.me/5581985775827" target="_blank" class="social-links"><i
                         class="fab fa-whatsapp"></i></a>
-    
+
                 <a href="https://github.com/RicardoVCastilho" target="_blank" class="social-links"><i
                         class="fab fa-github"></i></a>
-    
+
                 <a href="https://www.instagram.com/rv_castilho/" target="_blank" class="social-links"><i
                         class="fab fa-instagram"></i></a>
-                </div>
+            </div>
 
-                <a href="./src/images/cv-ricardo-web-dev.pdf" target="_blank" class="btn-download">Veja meu CV</a>
-            </div>
-    
-            <div class="profile-picture">
-                <img src="./src/images/master-blaster-profile-picture.jpg" alt="Foto de perfil Ricardo Castilho">
-            </div>
+            <a href="./src/images/cv-ricardo-web-dev.pdf" target="_blank" class="btn-download">Veja meu CV</a>
+        </div>
+
+        <div class="profile-picture">
+            <img src="./src/images/master-blaster-profile-picture.jpg" alt="Foto de perfil Ricardo Castilho">
+        </div>
     </section>
 
     <section class="about-me" id="about-me">
@@ -121,25 +109,18 @@
                 </div>
 
                 <h3>JavaScript</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>Minha principal tecnologia, com a qual tenho ampla experiência. Utilizei-a em diversos projetos, tanto no frontend, quanto no backend (com Node.js e Express), sempre focando na criação de soluções dinâmicas, interativas e escaláveis.</p>
             </div>
 
             <div class="habilities-informations">
 
                 <div class="logo">
-                    <i class="fab fa-js" id="javascript"></i>
+                    <i class="fa fa-file-code" id="javascript"></i>
                 </div>
 
                 <h3>Typescript</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>Embora não tenha trabalhado em muitos projetos com TypeScript, já utilizei a linguagem para aprimorar a lógica e garantir um desenvolvimento mais seguro, com tipagem estática e recursos avançados que tornam o código mais organizado e fácil de manter.
+                </p>
             </div>
 
             <div class="habilities-informations">
@@ -149,11 +130,7 @@
                 </div>
 
                 <h3>HTML5</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>Utilizo constantemente para estruturar e organizar conteúdo nas páginas. Com uma sólida compreensão de suas tags, atributos e boas práticas, sou capaz de criar layouts responsivos e semânticos, que garantem acessibilidade e melhor indexação pelos motores de busca.</p>
             </div>
 
             <div class="habilities-informations">
@@ -163,11 +140,7 @@
                 </div>
 
                 <h3>CSS3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>Utilizo frequentemente para criar layouts responsivos e visuais atraentes. Com o uso de Flexbox, Grid e animações, garanto uma experiência de usuário otimizada e adaptável a diferentes dispositivos.</p>
             </div>
 
             <div class="habilities-informations">
@@ -177,25 +150,17 @@
                 </div>
 
                 <h3>Bootstrap</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>É uma ferramenta que estou explorando e aplicando aos poucos em meus projetos. Com seus componentes prontos e sistema de grid flexível, facilita a criação de layouts responsivos e a implementação de elementos visuais de forma rápida, ajudando a acelerar o desenvolvimento sem comprometer a qualidade</p>
             </div>
 
             <div class="habilities-informations">
 
                 <div class="logo">
-                    <i class="fab fa-node-js" id="nodejs"></i>
+                    <i class="fa fa-cogs" id="nodejs"></i>
                 </div>
 
                 <h3>Node.js</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>É a minha principal ferramenta no backend, permitindo a criação de aplicações escaláveis e eficientes com JavaScript no servidor. Utilizo-o para desenvolver APIs e serviços de alto desempenho.</p>
             </div>
 
             <div class="habilities-informations">
@@ -205,11 +170,7 @@
                 </div>
 
                 <h3>Express Framework</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>É o framework que utilizo junto com Node.js para construir APIs RESTful de forma rápida e eficiente. Ele facilita a criação de rotas e o uso de middleware, proporcionando uma estrutura simples e flexível.</p>
             </div>
 
             <div class="habilities-informations">
@@ -219,11 +180,7 @@
                 </div>
 
                 <h3>MongoDB</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>É um banco de dados NoSQL que utilizo para armazenar e gerenciar dados de forma flexível e escalável. Sua estrutura baseada em documentos permite uma modelagem de dados mais dinâmica e eficiente, sendo ideal para projetos que exigem alta performance e flexibilidade.</p>
             </div>
 
             <div class="habilities-informations">
@@ -233,11 +190,7 @@
                 </div>
 
                 <h3>MySQL</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p> É um banco de dados relacional que utilizo em diversos projetos para garantir integridade e consistência dos dados. Com seu modelo estruturado e poderosas funcionalidades de consultas, é fundamental para aplicações que exigem alta confiabilidade e transações complexas.</p>
             </div>
 
             <div class="habilities-informations">
@@ -247,11 +200,7 @@
                 </div>
 
                 <h3>PostgreSQL</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>Foi  uma peçaessencial no meu projeto integrador Mascot's Clinical Vet, uma API de gestão para uma clínica veterinária. Utilizei a tecnologia para armazenar dados sobre internações e históricos de pacientes, aproveitando sua robustez e capacidade de lidar com dados complexos e relacionamentos entre tabelas.</p>
             </div>
 
             <div class="habilities-informations">
@@ -261,11 +210,7 @@
                 </div>
 
                 <h3>GitHub</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>É uma plataforma essencial que utilizo para versionamento e controle de código, permitindo o trabalho colaborativo em projetos de software. Através do GitHub, consigo gerenciar repositórios, revisar código e compartilhar meus projetos com facilidade, garantindo uma organização eficiente e a segurança dos meus códigos.</p>
             </div>
 
             <div class="habilities-informations">
@@ -275,11 +220,7 @@
                 </div>
 
                 <h3>Git Flow</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt placeat ipsam suscipit consequuntur
-                    ex
-                    reiciendis alias accusamus quo consectetur. Consequatur sequi ab id expedita facilis cupiditate quia
-                    atque
-                    dignissimos possimus!</p>
+                <p>É uma estratégia de ramificação que utilizo para gerenciar o desenvolvimento de software de forma estruturada. Com o GitFlow, consigo organizar as versões e os lançamentos de maneira eficiente, além de facilitar o trabalho em equipe, garantindo que as alterações no código sejam feitas de maneira controlada e sem conflitos</p>
             </div>
 
         </div>
@@ -288,136 +229,192 @@
     <section class="projects-section" id="projects">
 
         <h1>Meus projetos</h1>
-        
+
         <div class="container">
             <div class="projects-container">
-
-                <div class="project">
-                    <a href="https://github.com/softexrecifepe/PI-T1-GP1-CLINICA" target="_blank">
-                        <img src="./src/images/mascots-project.jpeg" alt="Mascot's clinical vet API" />
-                        <h3>Mascot' Clinical Vet API</h3>
-                        <div class="project-informations">
-                            <p>Este projeto é uma API RESTful desenvolvida em Node.js e Express para gerenciar os dados
-                                de uma clínica veterinária. A API inclui funcionalidades para gerenciar pessoas,
-                                endereços, contatos, papéis, animais de estimação, pacientes, gaiolas, tratamentos,
-                                medicamentos e registros diários de pacientes.</p>
-                        </div>
+                <section class="project">
+                    <a href="https://github.com/softexrecifepe/PI-T1-GP1-CLINICA" target="_blank"
+                        aria-label="Acesse o repositório Mascot's Clinical Vet API no GitHub">
+                        <img src="./src/images/mascots-project.jpeg"
+                            alt="Mascot's Clinical Vet API: API para gestão de clínica veterinária">
+                        <h3>Mascot's Clinical Vet API</h3>
                     </a>
-                    <a href="https://documenter.getpostman.com/view/39919123/2sAYBUFDAV" target="_blank">Confira a
-                        documentação completa do projeto
-                    </a>
-                </div>
+                    <div class="project-informations">
+                        <p>Este projeto é uma API RESTful em Node.js e Express, criada para gerenciar dados de uma
+                            clínica veterinária, incluindo pessoas, animais, tratamentos, medicamentos e registros
+                            diários.</p>
+                        <a href="https://documenter.getpostman.com/view/39919123/2sAYBUFDAV" target="_blank"
+                            class="project-link">Confira a documentação completa do projeto</a>
+                    </div>
+                    <div class="stacks-icons">
+                        <i class="fa fa-cogs"></i>
+                        <i class="fab fa-node-js"></i>
+                        <i class="fa fa-cloud"></i>
+                        <i class="fa fa-database"></i>
+                    </div>
+                </section>
 
-                <div class="project">
-                    <a href="https://github.com/RicardoVCastilho/user-list-front" target="_blank">
-                        <img src="./src/images/userlist-project.jpeg" alt="UserList - Front + API" />
+                <section class="project">
+                    <a href="https://github.com/RicardoVCastilho/user-list-front" target="_blank"
+                        aria-label="Acesse o repositório UserList no GitHub">
+                        <img src="./src/images/userlist-project.jpeg" alt="UserList - Front + API">
                         <h3>UserList - API de login + Front</h3>
-                        <div class="project-informations">
-                            <p>Este é o frontend do projeto Sistema de Gestão de Usuários, desenvolvido para gerenciar
-                                os usuários de uma API com funcionalidades completas de autenticação e administração. A
-                                API permite que você registre usuários, faça login, e realize operações de CRUD (Criar,
-                                Ler, Atualizar, Deletar) em usuários com segurança usando JWT para autenticação. </p>
-                        </div>
                     </a>
-                    <a href="https://documenter.getpostman.com/view/39919123/2sAYBd7Tg5" target="_blank">Confira a
-                        documentação completa do projeto</a>
-                </div>
+                    <div class="project-informations">
+                        <p>Projeto Fullstack completo. Consiste em um Sistema de Gestão de Usuários, que permite
+                            autenticação,
+                            administração e operações de CRUD em usuários com segurança usando JWT.</p>
+                        <a href="https://documenter.getpostman.com/view/39919123/2sAYBd7Tg5" target="_blank"
+                            class="project-link">Confira a documentação completa do projeto</a>
+                    </div>
+                    <div class="stacks-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                        <i class="fa fa-cogs"></i>
+                        <i class="fab fa-node-js"></i>
+                        <i class="fa fa-cloud"></i>
+                        <i class="fa fa-database"></i>
+                        <i class="fab fa-envira"></i>
+                    </div>
+                </section>
 
-                <div class="project">
-                    <a href="https://github.com/RicardoVCastilho/api-sql" target="_blank">
-                        <img src="src/images/userlist-project.jpeg" alt="Projeto API clientes" />
-                        <h3>API - Gerenciamento de clientes com MySQL2</h3>
-                        <div class="project-informations">
-                            <p>API RESTful para gerenciamento de dados de clientes, utilizando Node.js, Express e MySQL.
-                                Este repositório contém uma API simples para realizar operações de CRUD (Create, Read,
-                                Update, Delete) em um banco de dados de clientes. A API foi projetada para ser
-                                eficiente, simples de entender e com uma arquitetura modular.</p>
-                        </div>
+                <section class="project">
+                    <a href="https://github.com/RicardoVCastilho/api-sql" target="_blank"
+                        aria-label="Acesse o repositório API Clientes no GitHub">
+                        <img src="src/images/api-mongo.jpeg" alt="API para gerenciamento de clientes">
+                        <h3>API - Gerenciamento de clientes</h3>
                     </a>
-                    <a href="https://github.com/RicardoVCastilho/api-sql" target="_blank">Confira o reposítório do
-                        projeto completo
-                    </a>
-                </div>
+                    <div class="project-informations">
+                        <p>
+                            Este projeto é uma API RESTful desenvolvida em Node.js, Express e MySQL para gerenciar dados
+                            de clientes, permitindo operações de CRUD com uma arquitetura eficiente e modular.</p>
+                        <a href="https://github.com/RicardoVCastilho/api-sql" target="_blank"
+                            class="project-link">Confira o repositório do projeto completo</a>
+                    </div>
+                    <div class="stacks-icons">
+                        <i class="fa fa-cogs"></i>
+                        <i class="fab fa-node-js"></i>
+                        <i class="fa fa-cloud"></i>
+                        <i class="fa fa-database"></i>
+                    </div>
+                </section>
 
-                <div class="project">
-                    <a href="https://github.com/RicardoVCastilho/api-mongo-db" target="_blank">
-                        <img src="src/images/userlist-project.jpeg" alt="Projeto API gestão de garantias" />
-                        <h3>API - Gestão de garantias associadas a clientes</h3>
-                        <div class="project-informations">
-                            <p> Uma API desenvolvida para gerenciar garantias associadas a clientes. A aplicação permite
-                                registrar, consultar, atualizar e excluir ordens de garantias com informações detalhadas
-                                sobre o cliente e os produtos adquiridos</p>
-                        </div>
+                <section class="project">
+                    <a href="https://github.com/RicardoVCastilho/api-mongo-db" target="_blank"
+                        aria-label="Acesse o repositório API Garantias no GitHub">
+                        <img src="src/images/api-sql.jpeg"
+                            alt="API para gestão de garantias associadas a clientes">
+                        <h3>API - Gestão de garantias</h3>
                     </a>
-                    <a href="https://github.com/RicardoVCastilho/api-mongo-db" target="_blank">Confira o reposítório do
-                        projeto completo
-                    </a>
-                </div>
+                    <div class="project-informations">
+                        <p>Uma API desenvolvida para gerenciar garantias associadas a clientes. A aplicação permite
+                            registrar, consultar, atualizar e excluir ordens de garantias com informações detalhadas
+                            sobre o cliente e os produtos adquiridos.</p>
+                        <a href="https://github.com/RicardoVCastilho/api-mongo-db" target="_blank"
+                            class="project-link">Confira o repositório do projeto completo</a>
+                    </div>
+                    <div class="stacks-icons">
+                        <i class="fa fa-cogs"></i>
+                        <i class="fab fa-node-js"></i>
+                        <i class="fa fa-cloud"></i>
+                        <i class="fa fa-database"></i>
+                        <i class="fab fa-envira"></i>
+                    </div>
+                </section>
 
-                <div class="project">
-                    <a href="https://github.com/RicardoVCastilho/star-wars-characters-list" target="_blank">
-                        <img src="./src/images/starlist.jpeg" alt="Front com Consumo de API do Star Wars" />
+                <section class="project">
+                    <a href="https://github.com/RicardoVCastilho/star-wars-characters-list" target="_blank"
+                        aria-label="Acesse o repositório Star Wars Character List no GitHub">
+                        <img src="./src/images/starlist.jpeg" alt="Lista de personagens Star Wars">
                         <h3>Star Wars - Character List</h3>
-                        <div class="project-informations">
-                            <p>Este projeto é uma lista interativa de personagens do universo Star Wars. Através de uma
-                                API pública, ele carrega informações sobre personagens como nome, altura, massa e
-                                gênero, exibindo-os em cartões estilizados. O projeto também oferece a opção de alternar
-                                entre o modo claro e escuro, oferecendo uma experiência de visualização mais
-                                personalizada.</p>
-                        </div>
                     </a>
-                    <a href="https://ricardovcastilho.github.io/star-wars-characters-list/" target="_blank">Confira o
-                        projeto no GitHub Pages.
-                    </a>
-                </div>
+                    <div class="project-informations">
+                        <p>
+                            Este projeto consome a API pública do Star Wars e exibe uma lista interativa de personagens
+                            e características como uma foto, nome, altura, , massa, gênero. Tem a função de alternar o
+                            tema claro ou escuro.</p>
+                        <a href="https://ricardovcastilho.github.io/star-wars-characters-list/" target="_blank"
+                            class="project-link">Confira o projeto no GitHub Pages</a>
+                    </div>
+                    <div class="stacks-icons">
+                        <i class="fa fa-cloud"></i>
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                </section>
 
-                <div class="project">
-                    <a href="https://github.com/RicardoVCastilho/landing-page-mario-bros" target="_blank">
-                        <img src="./src/images/mario-page.jpeg" alt="Landing Page Super Mario" />
+                <section class="project">
+                    <a href="https://github.com/RicardoVCastilho/landing-page-mario-bros" target="_blank"
+                        aria-label="Acesse o repositório Super Mario Bros Landing Page no GitHub">
+                        <img src="./src/images/mario-page.jpeg" alt="Landing Page do Super Mario Bros">
                         <h3>Super Mario Bros - Landing Page</h3>
-                        <div class="project-informations">
-                            <p>Descrição do projeto</p>
-                        </div>
                     </a>
-                    <a href="https://ricardovcastilho.github.io/landing-page-mario-bros/" target="_blank">Confira o
-                        projeto no GitHub Pages.
-                    </a>
-                </div>
+                    <div class="project-informations">
+                        <p>Esta Landing Page com o tema do Super Mario Bros tem o objetivo de exibir o trailer do filme,
+                            com opções de navegação para Home e Detalhes.</p>
+                        <a href="https://ricardovcastilho.github.io/landing-page-mario-bros/" target="_blank"
+                            class="project-link">Confira o projeto no GitHub Pages</a>
+                    </div>
+                    <div class="stacks-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                </section>
 
-                <div class="project">
-                    <a href="https://github.com/RicardoVCastilho/gta-v-landing-page" target="_blank">
-                        <img src="./src/images/gtav-project.jpeg" alt="Landing Page GTA V" />
+                <section class="project">
+                    <a href="https://github.com/RicardoVCastilho/gta-v-landing-page" target="_blank"
+                        aria-label="Acesse o repositório GTA V Landing Page no GitHub">
+                        <img src="./src/images/gtav-project.jpeg" alt="Landing Page GTA V">
                         <h3>GTA V - Landing Page</h3>
-                        <div class="project-informations">
-                            <p>Como meu primeiro projeto, esta Landing page com o tema do Super Mario Bros, tem o
-                                objetivo de exibir o trailer 2 do filme. Composta também por um botão Home e outro
-                                Detalhes.</p>
-                        </div>
                     </a>
-                    <a href="https://ricardovcastilho.github.io/gta-v-landing-page/" target="_blank">Confira o
-                        projeto no GitHub Pages.
-                    </a>
-                </div>
+                    <div class="project-informations">
+                        <p>
+                            Este projeto é uma Landing Page do GTA V, com informações, links para compra e suporte. A
+                            página é responsiva, oferecendo boa experiência em dispositivos móveis e desktops.</p>
+                        <a href="https://ricardovcastilho.github.io/gta-v-landing-page/" target="_blank"
+                            class="project-link">Confira o projeto no GitHub Pages</a>
+                    </div>
+                    <div class="stacks-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                </section>
 
-                <div class="project">
-                    <a href="https://github.com/RicardoVCastilho/mini-pokedex-devquest" target="_blank">
-                        <img src="./src/images/pokedex.jpeg" alt="Mini pokedex" />
+
+                <section class="project">
+                    <a href="https://github.com/RicardoVCastilho/mini-pokedex-devquest" target="_blank"
+                        aria-label="Acesse o repositório Mini Pokedex no GitHub">
+                        <img src="./src/images/pokedex.jpeg"
+                            alt="Mini Pokedex: uma aplicação web simulando uma Pokédex" />
                         <h3>Mini Pokedex</h3>
-                        <div class="project-informations">
-                            <p>Este projeto é uma aplicação web que simula uma mini Pokédex, exibindo informações de
-                                Pokémon, como status, habilidades, e tipos. Ele foi desenvolvido com HTML, CSS e
-                                JavaScript.</p>
-                        </div>
                     </a>
-                    <a href="https://ricardovcastilho.github.io/mini-pokedex-devquest/" target="_blank">Confira o
-                        projeto no GitHub Pages.
-                    </a>
-                </div>
+                    <div class="project-informations">
+                        <p>Este projeto é uma aplicação web que simula uma mini Pokédex, exibindo informações de
+                            Pokémon, como status, habilidades e tipos. Ele foi desenvolvido com HTML, CSS e JavaScript.
+                        </p>
+                        <a href="https://ricardovcastilho.github.io/mini-pokedex-devquest/" target="_blank"
+                            class="project-link">Veja o projeto no GitHub Pages</a>
+                    </div>
+                    <div class="stacks-icons">
+                        <i class="fab fa-html5"></i>
+                        <i class="fab fa-css3-alt"></i>
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                </section>
+
 
             </div>
     </section>
 
-    <footer class="footer">
+    <button id="scrollToTopBtn" class="scroll-to-top-btn" onclick="scrollToTop()">
+        ↑
+    </button>
+
+    <footer class="footer" id="author">
         <div class="footer-content">
             <p>&copy; 2025 Ricardo Castilho's Portfolio. All rights reserved.</p>
             <p>Developed by Ricardo Vitor Castilho.</p>
@@ -432,6 +429,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="./src/js/script.js"></script>
 </body>
 
 </html>

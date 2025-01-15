@@ -14,9 +14,15 @@ header {
     top: 0;
     width: 100%;
     background-color: var(--top-down-color);
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+header.transparent {
+    background-color: rgba(0, 0, 0, 0.8); /* Preto com transparência */
+    box-shadow: none; /* Opcional: remover a sombra */
 }
 
 header .container {
@@ -29,16 +35,16 @@ header .container {
 }
 
 header .logo {
-    display: inline-block; 
+    display: inline-block;
     text-decoration: underline;
-    padding: 18px 10px; 
+    padding: 18px 10px;
     color: var(--general-red);
     font-size: 24px;
-    font-weight: bold; 
+    font-weight: bold;
     border: 3px solid var(--general-red);
-    border-radius: 50%; 
+    border-radius: 50%;
     text-align: center;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 header .logo:hover {
@@ -58,50 +64,19 @@ header .menu {
 }
 
 header .menu li a {
-    padding: 30px;
+    padding: 40px 10px;  /* Ajuste o padding */
     color: var(--general-white);
     font-size: 15px;
-    color: var(--general-white);
     font-weight: bolder;
+    transition: all 0.3s ease;
 }
 
 header .menu li a:hover {
-    border-bottom: solid 2px var(--general-red);
+    border-bottom: 5px solid var(--general-red);
+    color: var(--general-red); /* Mudança de cor ao passar o mouse */
 }
 
-header .hamburguer-menu {
-    display: none;
-}
-
-header .hamburguer-menu .icon {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-}
-
-.hamburguer-menu-content {
-    display: none;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: var(--top-down-color);
-    width: 200px;
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.hamburguer-menu-content li {
-    margin-bottom: 10px;
-}
-
-.hamburguer-menu-content li a {
-    color: var(--general-white);
-    font-size: 16px;
-}
-
-.hamburguer-menu-content li a:hover {
-    border-bottom: solid 2px var(--general-red);
-}
+/*Fim do header*/
 
 .presentation {
     margin-top: 80px;
@@ -192,13 +167,16 @@ header .hamburguer-menu .icon {
     background-color: var(--oxford-blue);
 }
 
+/*Fim da section*/
+
 .about-me {
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding: 50px 20px;
+    gap: 150px;
     background-color: var(--oxford-blue);
-    color: var(--general-white);
 }
 
 .dev-picture {
@@ -225,16 +203,6 @@ header .hamburguer-menu .icon {
     cursor: pointer;
 }
 
-.about-me {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 20px;
-    gap: 150px;
-    background-color: var(--oxford-blue);
-}
-
 .informations {
     display: flex;
     flex-direction: column;
@@ -255,6 +223,8 @@ header .hamburguer-menu .icon {
     color: #e0d9d7;
     margin-bottom: 20px;
 }
+
+/*Fim da section*/
 
 .main-habilities {
     padding: 50px 20px;
@@ -281,11 +251,16 @@ header .hamburguer-menu .icon {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
+    padding: 10px 20px;
     transition: transform 0.3s ease;
 }
 
 .habilities-container .habilities-informations:hover {
     transform: translateY(-10px);
+}
+
+.habilities-informations p {
+    text-align: justify;
 }
 
 .habilities-container .logo {
@@ -305,6 +280,8 @@ header .hamburguer-menu .icon {
     line-height: 1.6;
     color: #666;
 }
+
+/*Fim da section*/
 
 .projects-section {
     padding: 50px 20px;
@@ -365,11 +342,55 @@ header .hamburguer-menu .icon {
     display: inline-block;
     font-size: 16px;
     color: var(--red-wine);
-} 
+}
 
 .project a:hover {
     text-decoration: underline;
 }
+
+.stacks-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.stacks-icons i {
+    font-size: 24px;
+    color: #333;
+}
+
+.stacks-icons i:hover {
+    color: #007bff;
+}
+
+.scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    background-color: var(--oxford-blue);
+    color: var(--general-white); 
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    display: none;
+}
+
+.scroll-to-top-btn:hover {
+    background-color: var(--font-color);
+}
+
+.show {
+    display: block;
+}
+
+/*Fim da section*/
 
 .footer {
     background-color: var(--font-color);
